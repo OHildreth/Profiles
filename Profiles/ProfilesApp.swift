@@ -12,6 +12,12 @@ struct ProfilesApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onAppear {
+                    print("ContentView.onAppear is working")
+                    var parser = FileParser()
+                    
+                    parser.checkFunctionality()
+                }
         }
     }
 }
