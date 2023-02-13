@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C0947BFA299AECF700E8AD62 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0947BF9299AECF700E8AD62 /* ViewModel.swift */; };
+		C0947BFC299AF0C400E8AD62 /* XZPointTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0947BFB299AF0C400E8AD62 /* XZPointTable.swift */; };
+		C0947BFE299AF44800E8AD62 /* XZPointChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0947BFD299AF44800E8AD62 /* XZPointChart.swift */; };
 		C09D3BC82991B63500A29EDC /* ProfilesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09D3BC72991B63500A29EDC /* ProfilesApp.swift */; };
 		C09D3BCA2991B63500A29EDC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09D3BC92991B63500A29EDC /* ContentView.swift */; };
 		C09D3BCC2991B63600A29EDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C09D3BCB2991B63600A29EDC /* Assets.xcassets */; };
@@ -22,6 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C0947BF9299AECF700E8AD62 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		C0947BFB299AF0C400E8AD62 /* XZPointTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XZPointTable.swift; sourceTree = "<group>"; };
+		C0947BFD299AF44800E8AD62 /* XZPointChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XZPointChart.swift; sourceTree = "<group>"; };
 		C09D3BC42991B63500A29EDC /* Profiles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Profiles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C09D3BC72991B63500A29EDC /* ProfilesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilesApp.swift; sourceTree = "<group>"; };
 		C09D3BC92991B63500A29EDC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C0947BF8299AECDF00E8AD62 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				C0947BF9299AECF700E8AD62 /* ViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
 		C09D3BBB2991B63500A29EDC = {
 			isa = PBXGroup;
 			children = (
@@ -68,10 +82,11 @@
 		C09D3BC62991B63500A29EDC /* Profiles */ = {
 			isa = PBXGroup;
 			children = (
-				C09D3BE02991B72100A29EDC /* Views */,
-				C09D3BDD2991B6B200A29EDC /* Model */,
 				C09D3BC72991B63500A29EDC /* ProfilesApp.swift */,
 				C09D3BC92991B63500A29EDC /* ContentView.swift */,
+				C09D3BE02991B72100A29EDC /* Views */,
+				C09D3BDD2991B6B200A29EDC /* Data Model */,
+				C0947BF8299AECDF00E8AD62 /* View Models */,
 				C09D3BCB2991B63600A29EDC /* Assets.xcassets */,
 				C09D3BD02991B63600A29EDC /* Profiles.entitlements */,
 				C09D3BD62991B65E00A29EDC /* Resources */,
@@ -98,7 +113,7 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		C09D3BDD2991B6B200A29EDC /* Model */ = {
+		C09D3BDD2991B6B200A29EDC /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
 				C09D3BDE2991B6CF00A29EDC /* LinearRegression.swift */,
@@ -106,13 +121,15 @@
 				C09D3BE52991B8F100A29EDC /* ProfileData.swift */,
 				C09D3BE72991B94700A29EDC /* FileParser.swift */,
 			);
-			path = Model;
+			path = "Data Model";
 			sourceTree = "<group>";
 		};
 		C09D3BE02991B72100A29EDC /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				C09D3BE12991B73900A29EDC /* StartingLayout.swift */,
+				C0947BFB299AF0C400E8AD62 /* XZPointTable.swift */,
+				C0947BFD299AF44800E8AD62 /* XZPointChart.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -194,9 +211,12 @@
 				C09D3BCA2991B63500A29EDC /* ContentView.swift in Sources */,
 				C09D3BE22991B73900A29EDC /* StartingLayout.swift in Sources */,
 				C09D3BC82991B63500A29EDC /* ProfilesApp.swift in Sources */,
+				C0947BFC299AF0C400E8AD62 /* XZPointTable.swift in Sources */,
 				C09D3BE42991B84C00A29EDC /* XZPoint.swift in Sources */,
 				C09D3BDF2991B6CF00A29EDC /* LinearRegression.swift in Sources */,
+				C0947BFA299AECF700E8AD62 /* ViewModel.swift in Sources */,
 				C09D3BE62991B8F100A29EDC /* ProfileData.swift in Sources */,
+				C0947BFE299AF44800E8AD62 /* XZPointChart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

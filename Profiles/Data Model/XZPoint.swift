@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct XZPoint {
+struct XZPoint: Identifiable {
+    var id = UUID()
+    
     var xData: Double
     var zData: Double
 }
