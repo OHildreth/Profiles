@@ -23,6 +23,7 @@ struct ContentView: View {
                     }
                 }
                 Button("Parse File") {parseData()}
+                FlattenDataButtonView()
             }
             Divider()
             HSplitView {
@@ -36,9 +37,20 @@ struct ContentView: View {
     
     func parseData() {
         let parser = FileParser(url: url)
-        let parsedData = parser.parseData()
         
-        self.profileData.updateData(parsedData)
+        do {
+            let parsedData = try parser.parseData()
+            self.profileData.updateData(parsedData)
+        } catch {
+            print(error)
+        }
+    }
+    
+    @ViewBuilder
+    func FlattenDataButtonView() -> some View {
+        Button("Flatten Data") {
+            self.profileData.flattenData()
+        }
     }
     
 }

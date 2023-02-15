@@ -9,6 +9,8 @@ import SwiftUI
 
 @main
 struct ProfilesApp: App {
+    @StateObject var viewModel = ViewModel()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
